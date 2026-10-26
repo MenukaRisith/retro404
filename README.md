@@ -1,22 +1,18 @@
 # RETRO//404 — Archive Edition '98'
 
-An original, static, browser-based fictional 1998 computer recovery simulator. Serve the folder with a local static server; no build step, backend, account, or network API is needed. Google Fonts have system monospace fallbacks for offline judging.
+An original, static, browser-based fictional 1998 computer recovery simulator. It uses only HTML, CSS, and JavaScript—no backend, runtime, or external API is required. Google Fonts have system monospace fallbacks for offline judging.
 
 ## Live site
 
 Play it at [menukarisith.github.io/retro404](https://menukarisith.github.io/retro404/).
 
-```powershell
-cd D:\Projects\retro404
-python -m http.server 8080
-```
-
-Then open `http://localhost:8080`. Opening `index.html` as a `file:///` URL prevents browsers from loading its ES modules.
+For local development, serve the folder with any static web server. Opening `index.html` as a `file:///` URL prevents browsers from loading its ES modules.
 
 ## Controls
 
-- Double-click desktop icons; click once then press Enter for keyboard use.
+- Click a desktop icon once to open it; press Enter on a focused icon for keyboard use.
 - Drag title bars; use `_`, `□`, and `×` to minimize, maximize, and close. Taskbar buttons restore windows.
+- Shortcuts: `Ctrl+Alt+T` opens Terminal, `Ctrl+Alt+I` opens Inbox, `F1` opens About, and `?` opens the Archive Briefing.
 - Terminal supports `help`, `clear`, `pwd`, `ls`, `cd`, `cat`, `tree`, `whoami`, `date`, `status`, `scan`, `recover`, `theme`, `about`, and `hint`.
 - BYTE RUNNER: arrows/WASD to move, `P` pause, `R` restart, Enter advances after a clear. The accessibility fragment button avoids a story dead end.
 

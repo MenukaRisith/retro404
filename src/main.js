@@ -34,3 +34,4 @@ function boot(){
   bootScreen.querySelector('[data-skip]').onclick=finish;bootScreen.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key==='Escape')finish()});setTimeout(step,state.reduced?30:500);
 }
 document.addEventListener('retro-state',syncState);document.addEventListener('retro-windows',renderTaskbar);boot();
+document.addEventListener('keydown',e=>{if(e.target.matches('input,textarea,select'))return;if(e.ctrlKey&&e.altKey&&e.key.toLowerCase()==='t'){e.preventDefault();openApp('terminal')}else if(e.ctrlKey&&e.altKey&&e.key.toLowerCase()==='i'){e.preventDefault();openApp('inbox')}else if(e.key==='F1'){e.preventDefault();openApp('about')}else if(e.key==='?'){e.preventDefault();openApp('welcome')}else if(e.key==='Escape'){os.querySelector('.start-menu')?.classList.add('hidden');os.querySelector('.context')?.remove()}});
