@@ -2,6 +2,10 @@
 
 An original, static, browser-based fictional 1998 computer recovery simulator. Serve the folder with a local static server; no build step, backend, account, or network API is needed. Google Fonts have system monospace fallbacks for offline judging.
 
+## Live site
+
+Play it at [menukarisith.github.io/retro404](https://menukarisith.github.io/retro404/).
+
 ```powershell
 cd D:\Projects\retro404
 python -m http.server 8080
